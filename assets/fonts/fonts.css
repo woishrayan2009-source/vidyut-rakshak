@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Self-hosted type — no CDN dependency at runtime.
+   Matches Extingo's assets/fonts/fonts.css convention so the two sites can
+   eventually share one font asset folder.
+   ========================================================================== */
+
+/* Rajdhani — display face */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('rajdhani-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('rajdhani-latin-700-normal.woff2') format('woff2');
+}
+
+/* IBM Plex Sans — body face */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('ibm-plex-sans-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('ibm-plex-sans-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('ibm-plex-sans-latin-600-normal.woff2') format('woff2');
+}
+
+/* IBM Plex Mono — utility/mono face */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('ibm-plex-mono-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('ibm-plex-mono-latin-500-normal.woff2') format('woff2');
+}
