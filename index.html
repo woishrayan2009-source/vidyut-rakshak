@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidyut Rakshak — Electrical Fault Early-Warning</title>
+<meta name="description" content="Vidyut Rakshak — early-warning detection for electrical arc faults, stopping the fire before it starts. Part of Project Kavach.">
+<!-- Self-hosted type — no CDN dependency, works fully offline. -->
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div class="brand-text">
+        <span class="brand-name">VIDYUT RAKSHAK</span>
+        <span class="brand-sub">Electrical Fault Early-Warning</span>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <a class="site-nav-link is-active" href="index.html">Home</a>
+      <a class="site-nav-link" href="waveform-demo.html">Live Waveform Demo</a>
+      <a class="site-nav-link" href="documents.html">Documents</a>
+    </nav>
+  </header>
+
+  <div class="hazard-rule" role="presentation"></div>
+
+  <main class="page">
+
+    <section class="hero">
+      <div class="demo-mode-badge is-concept" role="note">
+        <span class="demo-mode-dot" aria-hidden="true"></span>
+        Concept &amp; Design Only — No Hardware Built
+      </div>
+
+      <h1 class="hero-name">Vidyut <span class="accent">Rakshak</span></h1>
+      <p class="hero-pitch">Stopping the fire before it starts</p>
+
+      <p class="hero-lede">
+        Most fire-safety systems react to flame or smoke — by the time they trigger, an electrical
+        fault has already ignited something. Vidyut Rakshak watches the wiring itself, catching the
+        arcing signature of a developing fault and cutting power to that circuit before it ever
+        reaches ignition temperature.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="waveform-demo.html">View Live Waveform Demo →</a>
+        <a class="btn btn-secondary" href="documents.html">Documents</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="problem-heading">
+      <div class="section-head">
+        <span class="panel-eyebrow">The Problem</span>
+        <h2 class="section-title" id="problem-heading">Electrical faults are the fire India isn't watching for</h2>
+        <p class="section-dek">
+          Short-circuits are already the single largest cause of urban fires — and the arcing that
+          precedes them is invisible to smoke and heat sensors alike. Figures below are placeholders;
+          replace the value and source line on each card with your own cited numbers.
+        </p>
+      </div>
+
+      <div class="stat-panel">
+
+        <article class="stat-card">
+          <span class="stat-value" contenteditable="true" spellcheck="false">70%</span>
+          <p class="stat-label">of fire calls in Delhi are attributed to electrical short-circuiting</p>
+          <div class="stat-source">
+            <span class="stat-source-tag">Edit source</span>
+            <span class="stat-source-text" contenteditable="true" spellcheck="false">Add citation — e.g. Delhi Fire Services annual report, year</span>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-value" contenteditable="true" spellcheck="false">1999</span>
+          <p class="stat-label">the year Arc-Fault Circuit Interrupters became mandatory in U.S. residential wiring — still absent from Indian codes</p>
+          <div class="stat-source">
+            <span class="stat-source-tag">Edit source</span>
+            <span class="stat-source-text" contenteditable="true" spellcheck="false">Add citation — e.g. NFPA 70 / National Electrical Code reference</span>
+          </div>
+        </article>
+
+        <article class="stat-card">
+          <span class="stat-value" contenteditable="true" spellcheck="false">Pre-flame</span>
+          <p class="stat-label">micro-arcing inside wiring precedes most electrical fires, often well before any flame or smoke is visible</p>
+          <div class="stat-source">
+            <span class="stat-source-tag">Edit source</span>
+            <span class="stat-source-text" contenteditable="true" spellcheck="false">Add citation — e.g. fire-safety engineering reference</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="problem-note">
+        <span class="problem-note-icon" aria-hidden="true">◆</span>
+        <span>Click any number or source line above to edit it directly on the page before exporting — this panel is intentionally left editable so exact figures and sources can be dropped in.</span>
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="how-heading">
+      <div class="section-head">
+        <span class="panel-eyebrow">How It Works</span>
+        <h2 class="section-title" id="how-heading">Three steps, ahead of ignition</h2>
+        <p class="section-dek">
+          The same rate-of-rise logic Kavach already uses for heat and water, applied to current —
+          catching the fault while it's still just a fault.
+        </p>
+      </div>
+
+      <div class="steps-row">
+
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <span class="step-icon" aria-hidden="true">⚡</span>
+          <h3 class="step-title">Monitor Current</h3>
+          <p class="step-desc">A non-invasive current transformer clips onto the circuit and continuously reads live current draw — no rewiring required.</p>
+        </article>
+
+        <div class="step-arrow" aria-hidden="true">→</div>
+
+        <article class="step-card">
+          <span class="step-number">02</span>
+          <span class="step-icon" aria-hidden="true">〰</span>
+          <h3 class="step-title">Detect Arc Signature</h3>
+          <p class="step-desc">The waveform is compared against the erratic, high-frequency signature of arcing — distinct from a normal overload or surge.</p>
+        </article>
+
+        <div class="step-arrow" aria-hidden="true">→</div>
+
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <span class="step-icon" aria-hidden="true">■</span>
+          <h3 class="step-title">Trip Circuit + Alert</h3>
+          <p class="step-desc">Power to that circuit is cut before it reaches ignition temperature, and the fault is reported to the Kavach dashboard — the same way Extingo reports a confirmed fire.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span>Vidyut Rakshak — Electrical Fault Early-Warning · Concept &amp; Design Only · Part of Project Kavach</span>
+  </footer>
+
+</body>
+</html>
